@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Crimson Text', serif !important;
+    font-size: 18px;
+    background: linear-gradient(85deg, rgba(255, 4, 255, 0.931), rgb(203, 4, 253), rgb(118, 3, 250),rgba(58, 92, 165, 0.781)) no-repeat;
+}
+div.container-nav
+{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+nav.nav-bar
+{
+    width: 100%;
+    color: white;
+    position: static;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav.nav-bar .brand-name a
+{
+    font-size: .8em;
+    color: #fff;
+}
+nav.nav-bar .nav-items
+{
+    list-style: none;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: space-between;
+}
+nav.nav-bar .nav-items .nav-item
+{
+    color: #fff;
+    font-size: .8em;
+    font-weight: 600;
+}
+nav.nav-bar .nav-items .nav-item a
+{
+    color: #fff;
+}
+nav.nav-bar .sign-in
+{
+    width: 90px !important;
+    height: 26px;
+    padding: 1px 5px;
+    /* margin: 10px auto; */
+    font-size: .8em;
+    border-radius: 16.5px;
+    background: rgba(255 255 255/ 0.2);
+    /* box-shadow: 0px 4px 4px 0px #fff; */
+}
+nav.nav-bar .sign-in a
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 2px auto;
+    display: block;
+}
+div.container-main
+{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    margin-top: 80px;
+    overflow: hidden;
+}
+div.container-main::before
+{
+    content: '';
+    position: absolute;
+    top: 44%;
+    left: -55%;
+    z-index: -10;
+    width: calc(100% + 100%);
+    height: 100%;
+    background-color: #fff;
+    transform: rotate(-10deg);
+}
+section.container
+{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    z-index: 100;
+    margin: auto 0 0 50px;
+}
+section.container.left
+{
+    float: left;
+}
+section.container.right
+{
+    float: right;
+}
+section.container.left > div.offer
+{
+    background-color: rgba(255 255 255/ 0.2);
+    width: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2px 5px;
+    margin: 30px 4.8em;
+    border-radius: 12.5px;
+    position: relative;
+    overflow: hidden;
+}
+section.container.left > div.offer::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    opacity: .3;
+    background-color: #000;
+
+}
+section.container.left > div.text-container
+{
+    /* background-color: #f8f8f8; */
+    max-width: 400px;
+    color: #fff;
+    margin: 30px 0 30px 2.6em;
+    font-weight: 700;
+    font-size: 1.8em;
+    word-spacing: .3em;
+    letter-spacing: .07em;
+    line-height: 1.5em;
+    
+}
+section.container.left > div.get-started
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0 4.65em;
+    width: 400px;
+    padding: 8px 5px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(98, 3, 98, 0.233);
+    backdrop-filter: blur(10px);
+}
+section.container.left > div.get-started::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    opacity: .5;
+    background-color: #fff;
+}
+section.container.left > div.get-started input
+{
+    background: none;
+    padding: 2px 4px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+section.container.left > div.get-started input::placeholder
+{
+    color: #fff;
+}
+section.container.left > div.get-started button
+{
+    background: rgb(65, 65, 221);
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+section.container.left > div.get-started input:is(:hover,:focus),
+section.container.left > div.get-started button:is(:hover,:focus)
+{
+    border: none;
+    outline: none;
+}
+section.container.left > div.plans
+{
+    color: #000 !important;
+    margin: 45px 0 0 4.5em;
+    max-width: 480px;
+    opacity: .4;
+}
+section.container.right
+{
+    margin-right: 0;
+    margin-top: 0px;
+    position: relative;
+}
+section.container.right .inbox
+{
+    width: 550px;
+    height: 190px;
+    position: relative;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: rgba(98, 3, 98, 0.233);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+section.container.right .inbox::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+    background-color: #fff;
+}
+section.container.right .inbox > .inbox-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: .7em; */
+}
+section.container.right .inbox > .inbox-header p img
+{
+    width: 14px;
+    height: 12px;
+    transform: translateY(3px);
+}
+section.container.right .inbox > .profile-card
+{
+    
+    padding: 15px 0px;
+    width: 150px;
+    transform: translateX(-20px);
+    font-size: small;
+}
+section.container.right .inbox > .profile-card .img
+{
+    width: 50px;
+    height: 50px;
+    margin: 2px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+section.container.right .inbox > .profile-card .desc
+{
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+section.container.right .inbox > .profile-card .desc > h4
+{
+    width: 15ch;
+    margin: 8px auto;
+}
+section.container.right .job-details
+{
+    background: rgb(255, 255, 255);
+    color: #000;
+    width: 390px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    padding-bottom: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 
+    -1px 2px 12px rgba(194, 159, 235, 0.5),
+    1px 2px 12px rgba(190, 215, 248, 0.5)
+    ;
+}
+section.container.right .job-details > h4
+{
+    padding: 10px 15px;
+}
+section.container.right .job-details > hr
+{
+    border-color: #efdddd0f;
+    border-width: .1px;
+    backdrop-filter: blur(10px);
+}
+section.container.right .job-details .portfolio
+{
+    margin: 10px 0 10px 16px;
+}
+section.container.right .job-details .portfolio-details
+{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 5fr;
+    text-align: left;
+    margin: 20px 0;
+}
+section.container.right .job-details .portfolio-details p
+{
+    padding: 15px 8px 15px 15px;
+    color: rgba(0, 153, 255, 0.739);
+    font-size: 0.7em;
+    background-color: rgba(134, 240, 250, 0.568);
+}
+section.container.right .card-sm
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    min-height: 100px;
+    width: 160px;
+    padding: 15px;
+    margin-top: 55px;
+    margin-left: 5px;
+    transform: translateX(-30px);
+    border-radius: 20px;
+    box-shadow: 
+    -2px 2px 12px rgba(194, 159, 235, 0.5),
+    2px 2px 12px rgba(190, 215, 248, 0.5)
+    ;
+}
+section.container.right .card-sm .plan-highlight
+{ 
+ font-size: .4em;
+ opacity: .6;
+}
+section.container.right .card-sm .plan-heading
+{
+    font-weight: bold;
+    font-size: .8em;
+    position: relative;
+    width: 100%;
+}
+section.container.right .card-sm .plan-heading span
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    top: 30%;
+    border-radius: 50%;
+    background: rgb(28, 221, 92);
+}
+section.container.right .card-sm .cost
+{
+    color: rgb(28, 221, 92);
+    font-weight: bolder;
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+}
+section.container.right .card-md
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    height: 120px;
+    width: 305px;
+    padding: 15px;
+    margin-top: 85px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+    border-radius: 15px;
+    box-shadow: 
+    -2px 2px 12px rgba(194, 159, 235, 0.5),
+    2px 2px 12px rgba(190, 215, 248, 0.5)
+    ;
+}
+section.container.right .card-md .designer-profile
+{
+    width: 200%;
+    height: 70%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+section.container.right .card-md .designer-profile img
+{
+    transform: translate(-20px,-10px);
+}
+section.container.right .card-md .designer-desc
+{
+    padding-top: 8px;
+    padding-left: 35px;
+}
+section.container.right .card-md .designer-desc p
+{
+    font-size: .6em;
+}
+section.container.right .card-md .cost-detail
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+section.container.right .card-md .cost-detail p
+{
+    font-size: .5em;
+    opacity: 0.5;
+}
+section.container.right .card-md .cost-detail .pay-status
+{
+    background-color: rgba(28, 221, 92, 0.65);
+    margin-top: 8px;
+    padding: 4px 10px;
+    /* width: 80px; */
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+section.container.right .card-md .cost-detail .pay-status span.check
+{
+    width: 20px !important;
+    margin: auto;
+    height: 20px;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgb(28, 221, 92);
+}
+section.container.right .card-md .cost-detail .pay-status span.check::before
+{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 15%;
+    width: 6px;
+    height: 2px;
+    transform: rotate(45deg);
+}
+section.container.right .card-md .cost-detail .pay-status span.check::after
+{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 40%;
+    left: 30%;
+    width: 12px;
+    height: 2px;
+    transform: rotate(-45deg);
+}
+
+* a{text-decoration: none;}
